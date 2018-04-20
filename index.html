@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en-CA"
+<!-- Mirrored from www.universalmineralstrade.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 13:39:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700italic,700,900,100,100italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Top 3 Gold &amp; Diamond Buyers in London, BC, United Kingdom</title>
+
+<!-- All in One SEO Pack 2.3.10.2 by Michael Torbert of Semper Fi Web Design[1026,1113] -->
+<link rel="author" href="https://plus.google.com/b/112204469865328395474/+Londoncashforgoldbuyer" />
+<link rel="publisher" href="https://plus.google.com/b/112204469865328395474/+Londoncashforgoldbuyer" />
+<meta name="description"  content="Pay instant cash for your gold, silver, jewelry, platinum and especially diamonds. Accurate & free estimate even if you don't sell to us. GIA certified buyer." />
+
+<link rel="canonical" href="index.html" />
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-45546016-1', 'auto');
+			
+			ga('send', 'pageview');
+			</script>
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='http://cdnjs.cloudflare.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='vc4g-font-awesome-css'  href='assets/font-awesome/css/font-awesome.mina07c.css?ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='vc4g-weather-icons-css'  href='assets/weather-icons/css/weather-iconsa07c.css?ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='vc4g-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%7CRoboto+Condensed%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='vc4g-bootstrap-css'  href='assets/css/bootstrap.mina07c.css?ver=4.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='vc4g-style-css'  href='assets/css/stylesa07c.css?ver=4.6.11' type='text/css' media='all' />
+<script type='text/javascript' src='assets/js/jquery5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/bootstrap.min5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/classie5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/responsive-tabs5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/jqBootstrapValidation5d94.js?ver=20160307'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var vc4g = {"ajax_url":"https:\/\/www.universalmineralstrade.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='assets/js/form5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/London5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='assets/js/jquery.roundabout5d94.js?ver=20160307'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate330a.js?ver=1.4.1'></script>
+<script type="text/javascript">
+	!function(){var analytics=window.analytics=window.analytics||[];if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.0";
+		window.analytics.load("qv6Qe6nZA53yJj2CvvK59DtTsZoYtg0i");
+	window.analytics.page();
+	  }}();
+</script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed19d7.json?url=https%3A%2F%2Fwww.universalmineralstrade.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5579?url=https%3A%2F%2Fwww.universalmineralstrade.com%2F&amp;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('index83ec.html?wordfence_logHuman=1&amp;hid=9761263C776415FFBD4D382FDB3CA3AE');
+</script>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		
+<script type='text/javascript' src='assets/plugins/wp-spamshield/js/jscripts.php'></script> 
+</head>
+<body id="page-top" class="index">
+<!-- Header -->
+<header>
+    <div class="container mb20">
+        <div class="row">
+            <div class="col-md-6 text-left pt30">
+                <img src="assets/images/logo.png" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="row row-no-padding">
+        <div class="col-lg-5">
+            <div class="post post-variant-1">
+                <div class="post-inner">
+                    <img src="assets/images/banners/img1.jpg" alt="" class="img-responsive post-image">
+                    <div class="post-caption">
+                        <div class="intro-text">
+                            <div class="intro-lead-in">Payment in <span>Cash Gold, Silver</span></div>
+                            <div class="intro-heading">We Buy Diamond <span>At Any Size</span></div>
+                            <a href="#services" class="page-scroll btn btn-xl">How it works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 dpl-none">
+            <div class="row row-no-padding">
+                <div class="col-md-4">
+                    <div class="post post-variant-1">
+                        <div class="post-inner withtext">
+                            <img src="assets/images/banners/img2.jpg" alt="" class="img-responsive post-image">
+                            <div class="post-text">
+                                20+ years of experiences in refining precious metal industry
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="post post-variant-1">
+                        <div class="post-inner withtext">
+                            <img src="assets/images/banners/img3.jpg" alt="" class="img-responsive post-image">
+                            <div class="post-text">
+                                Where the first-time gold seller can find reliable direction
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="post post-variant-1">
+                        <div class="post-inner withtext">
+                            <img src="assets/images/banners/img4.jpg" alt="" class="img-responsive post-image">
+                            <div class="post-text">
+                                Be willing to spend time with you and answer all of your questions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-no-padding">
+                <div class="col-md-4">
+                    <div class="post post-variant-1">
+                        <div class="post-inner">
+                            <img src="assets/images/banners/img5.jpg" alt="" class="img-responsive post-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="post post-variant-1">
+                        <div class="post-inner withtext">
+                            <img src="assets/images/banners/img6.jpg" alt="" class="img-responsive post-image">
+                            <div class="post-text">
+                                Capable of guiding you the best ways to sell gold, diamonds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="post post-variant-1">
+                        <div class="post-inner">
+                            <a href="tel:16045582026"><img src="assets/images/banners/img7.jpg" alt="" class="img-responsive post-image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="pull-right phone-call" href="tel:16045582026"><img src="assets/images/m/icon-phone.png" alt="16045582026"> 604-558-2026</a>
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/logo.png" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">Home</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#whatwebuy">What we buy</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#howwepay">How we pay</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">About Us</a>
+                </li>
+                <li>
+                    <a href="locations/index.html">Locations</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="tel:16045582026"><b class="icon-phone"></b>604-558-2026</a>
+                </li>
+                <!--<li class="phone-text">-->
+                <!--    <a class="sub-phone" href="tel:16045582026"><b class="icon-phone"></b>604-558-2026</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav><!-- Modal -->
+<div id="popupModals" class="modal fade" role="dialog" >
+  <div class="modal-dialog signup">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <!--<div class="modal-header">-->
+      <!--  <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+      <!--  <h4 class="modal-title">Modal Header</h4>-->
+      <!--</div>-->
+      <div class="modal-body">
+        <div class="container">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="col-left text-center">
+                    <div class="downloadPopup">
+                        <h4><img src="assets/images/text-quick.png"  alt="A Quick Look at our Gold Rate?"></h4>
+<p>Sign up to Universal Minerals Trade newsletter and get our most recent list price and HOT deal that we ONLY share with my private newsletter subscribers.</p>
+<form accept-charset="UTF-8" id="downloadPopupForm" novalidate="">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter your Email" id="email" name="email" 
+            required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
+        <p class="help-block text-danger"></p>
+    </div>
+    <a href="javascript:void(0);" class="btn download"><span>DOWNLOAD Now</span></a>
+    <input type="hidden" name="action" value="ajax_download">
+    <input type="hidden" name="security" value="afbc2eb25b"/>
+    <input type="hidden" id="thanks" value="/thank/download/">
+</form>
+<p class="text-center small">Unsubscribe at any time, and of course we hate spam just as much as you do</p>
+<script type="text/javascript">
+/*global $, analytics*/
+var $formDownloadPopup = $('#downloadPopupForm');
+$formDownloadPopup.find('.btn.download').click(function(){
+    if (typeof(analytics) != 'undefined') {
+        analytics.track('form_action', {
+            action: 'download',
+            source: 'Popup'
+        }, function(){
+            $formDownloadPopup.submit();
+        });
+    }
+});
+</script>                    </div>
+                </div>
+
+             
+         </div>
+      </div>
+      <!--<div class="modal-footer">-->
+      <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+      <!--</div>-->
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+/*global $,analytics*/
+$(document).ready(function(){
+    var popupShown = false;
+    if ($('#howwepay h2').length > 0) {
+        var htsTop = parseInt($('#howwepay h2').offset().top) - 71;
+
+        $(window).scroll(function(){
+            if ( popupShown != true && htsTop < $(window).scrollTop() ) {
+                $('#popupModal').modal('show');
+            }
+        });
+        
+    }
+    
+    $('#popupModal').on('show.bs.modal', function (e) {
+        if (typeof(analytics) != 'undefined') {
+            analytics.track('popup', {
+                form: 'Download PDF',
+                section: 'What we sell'
+            });
+        }
+    });
+    $('#popupModal').on('show.bs.modal', function (e) {
+        popupShown = true;
+    });
+});
+</script>
+    <!-- whatwebuy Grid Section -->
+<section id="whatwebuy" class="bg-light-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="text-right">What we buy</h2>
+                <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active"><a href="#gold" data-toggle="tab"  class="first">Gold</a></li>
+                    <li><a href="#silver" data-toggle="tab" >Silver</a></li>
+                    <li><a href="#platinum" data-toggle="tab" >Platinum</a></li>
+                    <li><a href="#jewellery" data-toggle="tab" >Jewellery</a></li>
+                </ul>
+                <div class="switch"><a href="what-we-buy/index.html" class="display-view list"></a><a class="display-view griditem active"></a></div>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="row active tab-pane fade in" id="gold">
+                        <div class="row mb20 btn-row-next">
+                            <div class="controls pull-right">
+                                <a class="right icon-next btn btn-primary" href="#prd-gold"  data-slide="next"></a>
+                            </div>
+                        </div>
+                        <div id="prd-gold" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$3058</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/gold/gold1.jpg" class="img-responsive" alt="Scrap Gold">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Scrap Gold</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$100259.54</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/gold/gold2.jpg" class="img-responsive" alt="Gold Bars and Coins">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Gold Bars and Coins</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$1259.54</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/gold/gold3.jpg" class="img-responsive" alt="Placer Gold">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Placer Gold</h5>
+                                            </div>
+                                        </div>
+                                                </div>
+                                </div>
+                                            <div class="item">
+                                    <div class="row">
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$1259.54</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/gold/gold4.jpg" class="img-responsive" alt="Pocket Gold Watches">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Pocket Gold Watches</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$28259.54</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/274x214-1.png" class="img-responsive" alt="Gold Watches">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Gold Watches</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$234.12</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/274x214-2.png" class="img-responsive" alt="Dental Gold">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Dental Gold</h5>
+                                            </div>
+                                        </div>
+                                                </div>
+                                </div>
+                                        </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row tab-pane fade in" id="silver">
+                        <div class="row mb20 btn-row-next">
+                            <div class="controls pull-right">
+                                <a class="right icon-next btn btn-primary" href="#prd-silver"  data-slide="next"></a>
+                            </div>
+                        </div>
+                        <div id="prd-silver" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$2259.54</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/silver/silver1.jpg" class="img-responsive" alt="Silver Coins">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Silver Coins</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$18000</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/silver/silver2.jpg" class="img-responsive" alt="Silver Bullion">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Silver Bullion</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$800</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/silver/silver3.jpg" class="img-responsive" alt="Silverware">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Silverware</h5>
+                                            </div>
+                                        </div>
+                                                </div>
+                                </div>
+                                        </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row tab-pane fade in" id="platinum">
+                        <div class="row mb20 btn-row-next">
+                            <div class="controls pull-right">
+                                <a class="right icon-next btn btn-primary" href="#prd-platinum"  data-slide="next"></a>
+                            </div>
+                        </div>
+                        <div id="prd-platinum" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$80022.22</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/platinum/pla1.jpg" class="img-responsive" alt="Platinum Bullion">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Platinum Bullion</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$1333.33</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/platinum/pla2.jpg" class="img-responsive" alt="Palladium">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Palladium</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$3999.99</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/platinum/pla3.jpg" class="img-responsive" alt="Platinum coins">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Platinum coins</h5>
+                                            </div>
+                                        </div>
+                                                </div>
+                                </div>
+                                        </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row tab-pane fade in" id="jewellery">
+                        <div class="row mb20 btn-row-next">
+                            <div class="controls pull-right">
+                                <a class="right icon-next btn btn-primary" href="#prd-jewellery"  data-slide="next"></a>
+                            </div>
+                        </div>
+                        <div id="prd-jewellery" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$4800</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/jew/jew1.jpg" class="img-responsive" alt="Gold Jewellery">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Gold Jewellery</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$388.88</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/jew/jew2.jpg" class="img-responsive" alt="Silver Jewellery">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Silver Jewellery</h5>
+                                            </div>
+                                        </div>
+                                                    <div class="col-md-4 whatwebuy-item">
+                                            <a href="what-we-buy/index.html" class="whatwebuy-link">
+                                                <div class="whatwebuy-hover">
+                                                    <div class="whatwebuy-hover-content">
+                                                        <strong>$1000.01</strong>
+                                                        <span>Call us for</span>
+                                                        <span class="mb20">better price</span>
+                                                        <i class="fa icon-call"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/images/whatwebuy/jew/jew3.jpg" class="img-responsive" alt="Platinum Jewellery">
+                                            </a>
+                                            <div class="whatwebuy-caption">
+                                                <h5>Platinum Jewellery</h5>
+                                            </div>
+                                        </div>
+                                                </div>
+                                </div>
+                                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <button type="submit" class="btn body-content" onclick="window.location.href='what-we-buy/index.html';" style="cursor: pointer;">View all</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $('#tabs').tab();
+            });
+        </script>
+    </div>
+</section><section id="buy-diamond" class="webuy">
+    <div class="container bg-diamond">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8">
+                <h2>Buy Diamond</h2><hr/><p>Does your old jewellery contain diamonds? Get extra cash by sending your diamond jewellery to us! We
+    are GIA certified diamond buyer in London and currently looking for any 100% natural diamonds and
+    will pay top dollar for your diamond jewellery.</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-unstyled">
+            <li>Buy diamond engagement rings</li>
+            <li>Buy diamond earrings</li>
+            <li>Buy loose diamonds</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-unstyled">
+            <li>Buy diamond necklaces</li>
+            <li>Buy diamond bracelets</li>
+            <li>Buy diamond rings</li>
+        </ul>
+    </div>
+</div>
+<p><strong>Please note</strong> we do buy any 100% natural diamonds in any shape, colour and cut but we
+    do not accept “clarity enhanced”, synthetic or lab-grown diamonds. As always, you are protected by
+    our 100% satisfaction guarantee.</p>                <button type="submit" class="btn body-content mt20" onclick="window.location.href='buy-diamond/index.html';">
+                    Learn More...
+                </button>
+            </div>
+        </div>
+    </div>
+</section><section id="howwepay" class="bg-light-white">
+<div class="container text-center">
+	<h2>What we sell</h2>
+	<hr />
+	<p>Listed below are our current prices. Precious metal pricing is changing constantly so please contact us by phone for our most up-to-date pricing.</p>
+	<p>Current buying rates are below We will match all local competitors, guaranteed!</p>
+	<div class="row mb40">
+        <div class="col-sm-5 col-md-6 text-right"><button type="submit" class="btn body-content mt20" onclick="window.location.href='in-store-service/index.html';"><span class="btn1">In-store service</span></div>
+        <div class="col-sm-5 col-md-6 text-left"><button type="submit" class="btn body-content mt20" onclick="window.location.href='mail-in-service/index.html';"><span class="btn2">Mail-in service</span></div>
+    </div>
+    <div class="row list-price">
+    	<div class="col-md-4">
+    		<div class="tables mb10">
+    			<h3>Gold Rates</h3>
+    			<table class="table table-striped table-hover footable toggle-medium">
+                    <thead>
+                        <th>Scrap Gold</th>
+                        <th class="text-right">Individuals (<100g)</th>
+                        <th class="text-right">Lots (>=100g)</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24k Gold – 99.9%</td>            
+                            <td class="text-right">$42.44/g</td>            
+                            <td class="text-right">$47.11/g</td>            
+                        </tr>
+                        <tr>
+                            <td>22k Gold – 91.6%</td>            
+                            <td class="text-right">$38.88/g</td>            
+                            <td class="text-right">$43.16/g</td>            
+                        </tr>
+                        <tr>
+                            <td>20k Gold – 83.3%</td>            
+                            <td class="text-right">$35.36/g</td>            
+                            <td class="text-right">$39.24/g</td>            
+                        </tr>
+                        <tr>
+                            <td>18k Gold – 75%</td>            
+                            <td class="text-right">$31.83/g</td>            
+                            <td class="text-right">$35.33/g</td>            
+                        </tr>
+                        <tr>
+                            <td>14k Gold – 58.3%</td>            
+                            <td class="text-right">$24.74/g</td>            
+                            <td class="text-right">$27.47/g</td>            
+                        </tr>
+                        <tr>
+                            <td>12k Gold – 50%</td>            
+                            <td class="text-right">$21.22/g</td>            
+                            <td class="text-right">$23.56/g</td>            
+                        </tr>
+                        <tr>
+                            <td>10k Gold – 41.6%</td>            
+                            <td class="text-right">$17.66/g</td>            
+                            <td class="text-right">$19.60/g</td>            
+                        </tr>
+                        <tr>
+                            <td>8k Gold – 33.3%</td>            
+                            <td class="text-right">$14.13/g</td>            
+                            <td class="text-right">$15.69/g</td>            
+                        </tr>
+                    </tbody>
+                 </table>
+    		</div>
+    		<div class="tables mb10">
+    			<h3>Gold Coin</h3>
+    			<table class="table table-striped table-hover footable toggle-medium">
+                    <thead>
+                         <th width="70%">Coin</th>
+                         <th class="text-right">Buy Price</th>
+                    </thead>
+                    <tbody>
+                            <tr>
+                            <td>United Kingdom 1 ounce (9999) Maple Leaf Coins</td>
+                            <td class="text-right">1700/oz</td>
+                        </tr>
+                            <tr>
+                            <td>United Kingdom 1 ounce (999) Maple Leaf Coins</td>
+                            <td class="text-right">1660/oz</td>
+                        </tr>
+                            <tr>
+                            <td>United Kingdom Maple leaf, less than 1 ounce</td>
+                            <td class="text-right">54.02/g</td>
+                        </tr>
+                        <tbody>
+                 </table>
+    		</div>
+    		<div class="tables">
+    			<h3>Gold Bars</h3>
+    			<table class="table table-striped table-hover footable toggle-medium">
+                    <thead>
+                         <th>Gold Bars</th>
+                         <th class="text-right">Buy Price</th>
+                     </thead>
+                    <tbody>
+                            <tr>
+                            <td>Gold 1 ounce (Recognized)</td>
+                            <td class="text-right">1680</td>
+                        </tr>
+                            <tr>
+                            <td>Gold 10 ounce (Recognized)</td>
+                            <td class="text-right">16600</td>
+                        </tr>
+                            <tr>
+                            <td>Gold 1kg (Recognized)</td>
+                            <td class="text-right">53000</td>
+                        </tr>
+                            <tr>
+                            <td>Gold bars, less than 1 ounce (Recognized)</td>
+                            <td class="text-right">51/g</td>
+                        </tr>
+                            <tr>
+                            <td>999 Gold bar (Unrecognized)</td>
+                            <td class="text-right">1600/oz</td>
+                        </tr>
+                        <tbody>
+                 </table>
+    		</div>
+    		
+    	</div>
+    	<div class="col-md-4">
+    		<div class="tables">
+    			<h3>Silver and Platinum</h3>
+    			<table class="table table-striped table-hover footable toggle-medium">
+                    <thead>
+                         <th width="70%">silver jewellery and other siver</th>
+                         <th class="text-right">Price</th>
+                     </thead>
+                    <tbody>
+                            <tr>
+                            <td>Silver Bars 1 ounce (Recognized)</td>
+                            <td class="text-right">24/g</td>
+                        </tr>
+                            <tr>
+                            <td>Silver Bars 10 ounce (Recognized)</td>
+                            <td class="text-right">215.25/oz</td>
+                        </tr>
+                            <tr>
+                            <td>Maple Leaf (1 ounce Silver)</td>
+                            <td class="text-right">24.5/coin</td>
+                        </tr>
+                            <tr>
+                            <td>Stamped Sterling Silver Flatware</td>
+                            <td class="text-right">0.55/g</td>
+                        </tr>
+                            <tr>
+                            <td>Stamped Sterling Silver Jewellery</td>
+                            <td class="text-right">0.42/g</td>
+                        </tr>
+                            <tr>
+                            <td>Mexican Silver stamped 925</td>
+                            <td class="text-right">0.55/g</td>
+                        </tr>
+                            <tr>
+                            <td>Stamped 800 Silver</td>
+                            <td class="text-right">0.28/g</td>
+                        </tr>
+                            <tr>
+                            <td>Unstamped scrap silver</td>
+                            <td class="text-right">0.35/g</td>
+                        </tr>
+                            <tr>
+                            <td>Other silver coins</td>
+                            <td class="text-right">0.48/g</td>
+                        </tr>
+                        <tbody>
+                 </table>
+                 <table class="table table-striped table-hover footable toggle-medium">
+                    <thead>
+                         <th width="70%">Platinum </th>
+                         <th class="text-right">Price</th>
+                     </thead>
+                    <tbody>
+                            <tr>
+                            <td>Platinum (950 purity)</td>
+                            <td class="text-right">29.44/g</td>
+                        </tr>
+                        <tbody>
+                 </table>
+    		</div>
+    		<!--<button type="submit" class="btn body-content download" onclick="window.location.href='https://www.universalmineralstrade.com/cash-gold/blog/';"><span>Download pdf</span></button>-->
+    		<!--<p class="note">Date Published: <strong>June 11 2015, 13:26:31</strong></p>-->
+    		<!--<p class="note">-->
+    		<!--    <a href="http://www.kitco.com/connecting.html">-->
+    		<!--        <img src="http://www.kitconet.com/charts/metals/gold/t24_au_en_caoz_2.gif" border="0" alt="[Most Recent Quotes from www.kitco.com]"-->
+    		<!--                style="width: 58%;">-->
+      <!--          </a>-->
+      <!--      </p>-->
+            
+            <div class="tables">
+    			<h3>Download pricing</h3>
+    			<div class="downloadForm">
+    			        <form class="form-horizontal" accept-charset="UTF-8" id="downloadForm" novalidate>
+    <div class="form-group">
+		<label class="col-sm-4 control-label">First Name</label>
+		<div class="col-sm-8">
+		    <input type="text" class="form-control" placeholder="Your Name" id="name" name="name"
+                required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+            <p class="help-block text-danger"></p>
+		</div>
+	</div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Email Address</label>
+        <div class="col-sm-8">
+		    <input type="text" class="form-control" placeholder="Email Address" id="email" name="email"
+                required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
+        <p class="help-block text-danger"></p>
+		</div>
+    </div>
+    
+    <a href="javascript:void(0);" class="btn download"><span>DOWNLOAD</span></a>
+    <input type="hidden" name="action" value="ajax_download"/>
+    <input type="hidden" name="security" value="afbc2eb25b"/>
+    <input type="hidden" id="thanks" value="/thank/download/"/>
+</form>
+<p class="text-center small pl30 pr30">Enter your name and email above and click, "DOWNLOAD!"</p>
+<script type="text/javascript">
+/*global $, analytics*/
+var $formDownload = $('#downloadForm');
+$formDownload.find('.btn.download').click(function(){
+    if (typeof(analytics) != 'undefined') {
+        analytics.track('form_action', {
+            action: 'download',
+            source: 'Home-HowToSell'
+        }, function(){
+            $formDownload.submit();
+        });
+    }
+});
+</script>    			</div>
+    			
+    		</div>
+    	</div>
+    	<div class="col-md-4">
+    	    <div class="tables">
+    			<h3 class="right">Cad Gold Price in Last 5 Days</h3>
+    			<div class="bg-grey">
+                    <script type="text/javascript"
+                          src="https://www.google.com/jsapi?autoload={%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'modules':[{%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'name':'visualization',%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'version':'1',%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'packages':['corechart']%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20}]%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20}"></script>
+                
+                     <div id="chart_div"></div>
+                 </div>
+    		</div>
+    		
+    		<div class="tables ">
+    			<h3 class="right">Gold Calculator</h3>
+    			
+    			    <div class="calculator">
+                        <div class="bar-prd">
+                            <div class="row">
+                                <a class="active col-md-6" href="#calcGold" aria-controls="calcGold" role="tab" data-toggle="tab">Gold</a>
+                                <a class="col-md-6" href="#calcSilver" aria-controls="calcSilver" role="tab" data-toggle="tab">Silver</a>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="calcGold">
+                                <form id="calcGoldForm" method="post" class="form-horizontal">
+                                    <input type="hidden" name="type" value="gold"/>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label">Weight</label>
+                                        <div class="col-xs-5">
+                                            <input type="number" class="form-control" name="weight" value="0" />
+                                        </div>
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <div class="col-xs-4 selectContainer sizemin">
+                                            <select name="unit" class="form-control arrow">
+                                                <option value="oz">Ounce</option>
+                                                <option selected="" value="g">Grams</option>
+                                                <option value="dwt">DWT (Pennyweight)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label">Purity</label>
+                                        <div class="col-xs-9 selectContainer">
+                                            <select name="purity" class="form-control" size="1">
+                                                <option value="1">24k Gold – 99.9%</option><option value="2">22k Gold – 91.6%</option><option value="3">20k Gold – 83.3%</option><option value="4">18k Gold – 75%</option><option value="5">14k Gold – 58.3%</option><option value="6">12k Gold – 50%</option><option value="7">10k Gold – 41.6%</option><option value="8">8k Gold – 33.3%</option>                                            </select>
+            
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label btn calc">Result</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control result" id="calculatedPrice" kname="" value="$0" />
+                                        </div>
+                                    </div>
+                                    <div id="success"></div>
+                                </form>
+                                    <a href="el:16045582026" class="btn download call"><i class="fa fa-phone"></i><span>Call for better prices</span></a>
+                                <p class="text-center small">Today's Gold Price: <strong>$1650.00/oz</strong></p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="calcSilver">
+                                <form id="calcSilverForm" method="post" class="form-horizontal">
+                                    <input type="hidden" name="type" value="silver"/>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label">Weight</label>
+                                        <div class="col-xs-5">
+                                            <input type="number" class="form-control" name="weight" value="0" />
+                                        </div>
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <div class="col-xs-4 selectContainer sizemin">
+                                            <select name="unit" class="form-control arrow">
+                                                <option value="oz">Ounce</option>
+                                                <option selected="" value="g">Grams</option>
+                                                <option value="dwt">DWT (Pennyweight)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label">Purity</label>
+                                        <div class="col-xs-9 selectContainer">
+                                            <select name="purity" class="form-control" size="1">
+                                                <option value="1">.999</option><option value="2">Sterling</option><option value="3">SS</option><option value="4">.925</option><option value="5">.830</option><option value="6">.800</option>    
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-xs-3 control-label btn calc">Result</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control result" id="calculatedPrice" name="" value="$0" />
+                                        </div>
+                                    </div>
+                                    <div id="success"></div>
+                                </form>
+                                <a href="el:16045582026" class="btn download call"><i class="fa fa-phone"></i><span>Call for better prices</span></a>
+                                    <p class="text-center small">Today's Siver Price: <strong>$19.55/oz</strong></p>
+                            </div>
+                        </div>
+                    </div>
+    			    
+    			
+    			
+    		</div>
+    	</div>
+    </div>
+</div>
+<script type="text/javascript">
+// google.setOnLoadCallback(drawChart);
+
+function drawChart(chartData) {
+    var data = google.visualization.arrayToDataTable(chartData);
+    
+    var optionsAxisStyle = {bold: true, fontName: "Roboto", fontSize: 11};
+    var options = {
+        legend: { position: 'none' },
+        backgroundColor: '#e9ebee',
+        colors: ['#d19f42'],
+        is3D:true,
+        width:'100%',
+        vAxis: {textStyle: optionsAxisStyle, format: '$#,###'},
+        hAxis: {textStyle: optionsAxisStyle, format: 'MMM dd'}
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+}
+
+$.ajax({
+    url: vc4g.ajax_url + '?action=ajax_gold_prices',
+    method: "GET",
+    dataType: "json",
+    complete: function(response){
+        var result = response.responseJSON;
+        if (result.success != false) {
+            var chartData = result.data;
+            drawChart(chartData);
+        }
+    }
+},'json');
+</script></section><!-- Services Section -->
+<section id="services" class="services">
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa icon-best"></i>
+                </span>
+            <h3 class="service-heading">Best Price Guarantee</h3>
+            <p class="text-muted">We pay premium on anything  made of gold, silver, platinum… and especially diamonds in any condition.</p>
+            <button type="submit" class="btn body-content mt20" onclick="window.location.href='how-to-sell/index.html';">Check Our Prices</button>
+        </div>
+        <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa icon-trust"></i>
+                </span>
+            <h3 class="service-heading">A Trustable Buyer</h3>
+            <p class="text-muted">We still offer you free and accurate estimates for the value of your jewelry even if you don’t sell to us.</p>
+            <button type="submit" class="btn body-content mt20" onclick="window.location.href='how-to-sell/index.html';">Estimate The Payout</button>
+        </div>
+        <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa icon-fast"></i>
+                </span>
+            <h3 class="service-heading">Fast &amp; Convenient Service</h3>
+            <p class="text-muted">Sometimes it takes longer than you want, but there is typically little or no wait to get your cash</p>
+            <button type="submit" class="btn body-content mt20" onclick="window.location.href='in-store-service/index.html';">Learn More</button>
+        </div>
+    </div>
+</div>
+</section><!-- /* 15pJQhrPh3XJCUOiaQCa62html */ --><!-- 9GJQ4CjDQq --><!-- /* 1uqjsQSyWVhmOHAEVa1i62html */ --><!-- blog Section -->
+<section id="blog" class="bg-light-white">
+    <div class="bg-blue-dark">
+        <div class="container text-center">
+            <div class="title">
+                <h2>Blog</h2>
+                <hr />
+            </div>
+            <ul id="myRoundabout">
+            <li>
+            <div class="sphere-content">
+                <h3>Gold Price Forecast: Factors To Watch In 2017</h3>
+                <p>Where is gold’s price headed in 2017? It’s a simple question with a complicated answer. To make sense of it, let’s review some of the most important factors on the price of gold this year: Factor #1: Interest Rates Interest rates might not have the effect on gold you might imagine. Anyone watching the history...</p>
+                <p>&nbsp;</p>
+                <a href="gold-price-forecast-factors-to-watch-in-2017/index.html" class="btn body-content">read more ></a>
+            </div>
+        </li>
+            <li>
+            <div class="sphere-content">
+                <h3>Lest We Forget &#8211; What Does It Mean?</h3>
+                <p>&#8220;Lest&#8221; means something like &#8220;in case&#8221;. Three words renown across most countries to show our remembrance of those who have fought, and those who have died fighting for freedom. It means that we will never forget. In United Kingdom, we honour the day by wearing poppies, a flower that bloomed throughout the fields of battle grounds in...</p>
+                <p>&nbsp;</p>
+                <a href="lest-we-forget-what-does-it-mean/index.html" class="btn body-content">read more ></a>
+            </div>
+        </li>
+            <li>
+            <div class="sphere-content">
+                <h3>Tips to Travel to London</h3>
+                <p>London is one of the most cosmopolitan cities in North America. It was recognized as the top city in United Kingdom in Travel + Leisure magazine&#8217;s 2014 World&#8217;s Best Awards. The city was also named the Top Destination in United Kingdom in TripAdvisor&#8217;s 2014 Travellers&#8217; Choice awards, and was chosen as the world&#8217;s &#8220;Most Liveable City&#8221; in...</p>
+                <p>&nbsp;</p>
+                <a href="tips-to-travel-to-London/index.html" class="btn body-content">read more ></a>
+            </div>
+        </li>
+    
+
+            </ul>
+        </div>
+    </div>
+<!--    <script type="text/javascript" src="--><!--"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('ul#myRoundabout').roundabout();
+        });
+    </script>
+</section><!-- Team Section -->
+<section id="team" class="bg-light-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <h2>About Us</h2>
+                <hr />
+                <p>Universal Minerals Trade is the most trusted gold buyer in Greater London Area. With 20 years of experience in refining precious metal industry, our professional will guide you the best ways to sell gold, silver and other precious metals such as platinum and palladium.</p>
+<p>We buy DIAMOND. Your diamond will be carefully evaluated by our GIA Certified professional.</p>
+<p><img src="assets/images/logo-american.jpg" alt />&nbsp;&nbsp;<img src="assets/images/logo-about.png" alt /></p>
+<p><img src="assets/images/logo-europ.jpg" alt /><img src="assets/images/logo-retina.jpg" alt /></p>
+<div class="clearfix"></div>                <button type="submit" class="btn body-content mt20" onclick="window.location.href='about-us/index.html';">Learn More...</button>
+            </div>
+            <div class="col-xs-12 col-xs-6 col-md-5">
+                <h3 class="text-center">What Our Customers Say</h3>
+<div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li><li data-target="#testimonialCarousel" data-slide-to="1"></li><li data-target="#testimonialCarousel" data-slide-to="2"></li>    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+            <div class="item  active"">
+            <div class="team-member">
+                                <blockquote>My mother told me how much money Universal Minerals Trade gave her for her gold bracelet. I couldn’t believe it but you paid me even more cash for my gold!</blockquote>
+                <p class="text-muted">-K.T., </p>
+            </div>
+        </div>
+            <div class="item ">
+            <div class="team-member">
+                                <blockquote>I can’t believe people are still going to pawn shops any more, I was quoted $300 at the pawn shop and Universal Minerals Trade paid me over $900 for my old “bling chain” I needed the money and I’m glad I shopped around.</blockquote>
+                <p class="text-muted">-Dana W, </p>
+            </div>
+        </div>
+            <div class="item ">
+            <div class="team-member">
+                                <blockquote>What a difference, I was quoted $10 a gram for 10kt gold at this mall kiosk by someone who did not seem like they knew what they were doing. Universal Minerals Trade paid me over $20 per gram; I will only be dealing with them in the future.</blockquote>
+                <p class="text-muted">-Dave L, </p>
+            </div>
+        </div>
+        </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-5">
+                <div class="col-md-5">
+                    <ul class="list-unstyled menu-footer"><li class="active"><a href="index.html">Home</a></li><li><a href="what-we-buy/index.html">What we buy</a></li><li><a href="how-to-sell/index.html">What we sell</a></li><li><a href="cash-gold/blog/index.html">Blog</a></li><li><a href="about-us/index.html">About Us</a></li><li><a href="locations/index.html">Locations</a></li></ul>                </div>
+                <div class="col-md-7">
+                    <ul class="list-unstyled place-contact">
+    <!-- <li class="icon-phone-small">Hotline: <a href="tel:16044494792">604 449-4792</a></li> -->
+    <li class="icon-email-small">info@universalmineralstrade.com</li>
+    <li class="icon-place">29 Old Gloucester St, Bloomsbury, London WC1N 3AF</li>
+    <li class="icon-date">Monday to Friday: 10:00 - 18:00</li>
+    <li class="icon-date">Saturday: 10:00 - 17:00</li>
+    <!-- <li>Sun & Holiday: Call <a href="tel:17788828908">(778) 882-8908</a></li> -->
+</ul>                </div>
+            </div>
+            <div class="col-sm-5 col-md-7">
+                <div class="col-md-5">
+                    <ul class="list-unstyled place-contact">
+    <!-- <li class="icon-phone-small">Phone: <a href="tel:16049990606">(604) 999-0606</a></li> -->
+    <li class="icon-phone-small">Cell: <a href="tel:17788692112">(778) 869-2112</a></li>
+    <li class="icon-place">183 Rose Ln, Liverpool L18 5EA, UK</li>
+</ul>                </div>
+                <div class="col-md-7">
+                    <form name="subscribeForm" id="contactForm" novalidate>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email *" id="email" name="email"
+                    required 
+                    data-validation-required-message="Please enter your mail." aria-invalid="false">
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone"
+                    required
+                    data-validation-required-message="Please enter your phone number." aria-invalid="false">
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message" id="message" name="message"
+                    required
+                    data-validation-required-message="Please enter your message." aria-invalid="false"></textarea>
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="success"></div>
+            <button type="submit" class="btn btn-yellow">Send</button>
+        </div>
+    </div>
+    <input type="hidden" name="action" value="ajax_subscribe"/>
+    <input type="hidden" name="security" value="fd02f792a6"/>
+    <input type="hidden" id="thanks" value="/thank/newsletter/"/>
+</form>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container pt20">
+        <div class="row">
+            <div class="col-md-6">
+                <span class="copyright">Copyright &copy; Universal Minerals Trade 2018</span>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="list-inline social-buttons">
+                    <li class="text-center"><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li class="text-center"><a href="#" target="_blank"><i class="fa fa-yelp"></i></a></li>
+                    <li class="text-center"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="text-center"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="text-center"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer> <script type="text/javascript">
+  analytics.track("Viewed Home Page", {"noninteraction":true}, {"library":"analytics-wordpress"});
+    
+</script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+r3f5x9JS=escape(document['referrer']);
+hf4N='ddb28c674a86752cebf013497f5135dc';
+hf4V='87b1f81f1d15367faee01f7cf8c1980d';
+jQuery(document).ready(function($){var e="#commentform, .comment-respond form, .comment-form, #lostpasswordform, #registerform, #loginform, #login_form, #wpss_contact_form";$(e).submit(function(){$("<input>").attr("type","hidden").attr("name","r3f5x9JS").attr("value",r3f5x9JS).appendTo(e);$("<input>").attr("type","hidden").attr("name",hf4N).attr("value",hf4V).appendTo(e);return true;});$("#comment").attr({minlength:"15",maxlength:"15360"})});
+/* ]]> */
+</script> 
+<script type='text/javascript' src='assets/plugins/wp-spamshield/js/jscripts-ftr-min.js'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embeda07c.js?ver=4.6.11'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c547b2ef59","applicationID":"18878068","transactionName":"YAMHZBNQD0JUBUUPX1lJJFMVWA5fGgBDCV5DSxVRBlQ=","queueTime":0,"applicationTime":527,"atts":"TEQEEltKHEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.universalmineralstrade.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 13:39:54 GMT -->
+</html>

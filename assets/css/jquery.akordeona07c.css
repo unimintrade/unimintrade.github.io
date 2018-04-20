@@ -1,0 +1,87 @@
+
+.akordeon-item
+{
+    position: relative;
+}
+.akordeon-item .akordeon-item-head
+{
+    height: 44px;
+}
+.akordeon-item .akordeon-item-body
+{
+    border-bottom: none;
+    overflow: hidden;
+}
+.akordeon-icon
+{
+    width: 34px;
+    height: 30px;
+    
+    padding: 0;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+    
+}
+.akordeon-heading
+{
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.akordeon-icon span
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/group-icons.png) -539px -846px no-repeat;
+    color: transparent;
+}
+
+.akordeon-item.expanded .akordeon-icon span
+{
+    background-position: -539px -975px;
+}
+.akordeon-item-head-container
+{
+    width: 100%;
+    position: absolute;
+    left: -8px;
+    cursor: pointer;
+}
+
+
+.akordeon-item.collapsed
+{
+     border-bottom: solid 1px #e0e0e0;
+}
+.akordeon-item.collapsed.last {border-bottom: none;}
+
+.akordeon-item.expanded .akordeon-heading
+{
+    color: #d19f42;
+}
+
+.akordeon-item-content
+{
+    padding: 10px 10px 10px 35px;
+    min-height: 120px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4f4f4f;
+}
+
+.akordeon-border-top
+{
+    border-top: solid 1px #e0e0e0;
+}
+.akordeon-item.expanded .akordeon-item-body.akordeon-border-bottom
+{
+    border-bottom: solid 1px #e0e0e0 !important;
+}
+
